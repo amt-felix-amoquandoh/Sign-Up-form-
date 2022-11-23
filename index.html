@@ -1,64 +1,97 @@
-
-<!doctype html>
-<html class="no-js" lang="en" dir="ltr">
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/agency.png">
-    <title>Office Grid Template</title>
-    <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css">
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./"
+    />
+    <title>Sign Up</title>
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
-<body>
-  <!--navbar begins here-->
-  <nav class="app header">
-    <ul class="topBar">
-       <li class="listOnly"><a  class="navText" href="">About</a></li>
-       <li class="listOnly"><a  class="navText" href="">Products</a></li>
-       <li class="listOnly"><a class="navText" href="">Our Team</a></li>
-       <li class="ending"><a class="navText" href="">Contact Us</a></li>
-    </ul>
-  </nav>
-  <!--nav ends here-->
 
+  <body>
+   <div class="container-fluid signBody">
+    <h3 class="mainTitle"><b>Sign Up</b></h3>
+    <div class="container signUpInner">
+   
+     <div class="row">
+       <form class="col s12" id="signUpForm" novalidate>
+         <div class="row">
 
-  <!--Cover below-->
-  <div class="container app coverTop">
-    <img class="cover" src="./images/cover/undraw_start_building_re_xani.svg">
-  </div>
-  <!--cover ends-->
+           <div class="input-field col s6">  
+            <label for="firstName">First Name</label>          
+             <input name="First Name" id="firstName" type="text" onfocusout="validateFirstName()">            
+             <span class="info-text"></span>
+           </div>
 
-<!--body below-->
-  <div class="container-fluid app projectBody">
-    <div class="app blue grid-wrapper">
-      <div class="box app"><img src="./images/New folder/computer.png"></div>
-      <div class="box app"><img src="./images/New folder/laptop.png"></div>
-      <div class="box app"><img src="./images/New folder/folders.png"></div>
-      <div class="box app"><img src="./images/New folder/money-bag.png"></div>
-      <div class="box app"><img src="./images/New folder/note.png"></div>
-      <div class="box app"><img src="./images/New folder/presentation.png"></div>
-      <div class="box app"><img src="./images/New folder/notebook.png"></div>
-      <div class="box app"><img src="./images/New folder/phone.png"></div>
+           <div class="input-field col s6">
+             <label for="lastName">Last Name</label>
+             <input name="Last Name"  id="lastName" type="text" onfocusout="validateLastName()">            
+             <span class="info-text"></span>
+           </div>
+         </div>
+   
+         <div class="row">
+           <div class="input-field col s6">
+             <input name="Password"  id="passKey" type="password" onfocusout="validatePassKey()">
+             <span class="info-text"></span>
+             <label for="passKey">Password</label>             
+           </div>
+
+           <div class="input-field col s6">
+            <label for="confirmPassKey">Confirm Password</label>
+             <input name="Confirm Password" id="confirmPassKey" type="password" onfocusout="validateConfirmPassKey()">
+             <span class="info-text"></span>
+           </div>
+         </div>
+         <div class="row">
+           <div class="input-field col s12">
+             <input name="Email"  id="email" type="email" onfocusout="validateEmail()">
+             <span class="info-text"></span>
+             <label for="email">Email</label>             
+           </div>
+         </div>
+ 
+         <button class="btn waves-effect" type="submit" name="action">Submit
+         </button>
+ 
+       </form>
+     </div>
+     <img style="width: 45%;" src="./media/johnson-wang-iI4sR_nkkbc-unsplash.jpg" alt="" >
     </div>
-  </div>
-  <!--body ends here-->
+   </div>
 
 
 
 
-  <footer class="app footer">
-    <div>
-      © 2020 Copyright:
-      <a href=""><i>paakowamoquandoh@gmail.com</i></a>
-    </div>
-  </footer>
-    
 
 
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
+
+    <!-- project ends here-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="./js/app.js"></script>
   </body>
 </html>
