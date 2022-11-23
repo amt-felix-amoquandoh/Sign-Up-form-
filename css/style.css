@@ -29,7 +29,3 @@ body{
     display: flex;
     flex-direction: row;
 }
-
-.valid{
-    color: blue;
-}

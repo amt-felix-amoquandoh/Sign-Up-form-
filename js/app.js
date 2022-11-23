@@ -59,7 +59,7 @@ function checkEmptyField (field){
         setInvalid(field, `${field.name} must not be empty`);
         return true;
     } else {
-        setValid();
+        setValid(field);
         return false;
     };
 };
@@ -85,7 +85,9 @@ function setValid(field){
 
 //check on this funvtion later................
 function checkAlphabets(field){
-    if(/[a-zA-Z]+/.test(field.value)){
+    let regExName = field.value;
+    let regResult = /[a-zA-Z]/;
+    if(regExName.match(regResult)){
         setValid(field);
         return true;
     } else{
