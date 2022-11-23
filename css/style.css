@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.signBody{
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    background-color: rgb(253, 229, 224);
+}
+
+.mainTitle{
+    text-align: center;
+    color: teal;
+}
+
+.signUpInner{
+    width: 850px;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.valid{
+    color: blue;
+}
