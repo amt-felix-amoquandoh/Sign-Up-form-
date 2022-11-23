@@ -17,7 +17,7 @@ const invalidColor = "red";
 // firstName validation
 function validateFirstName (){
     if(checkEmptyField(firstName)) return;
-    if(!checkAlphabets(firstName)) return;
+    if(checkAlphabets(firstName)) return;
     return true;
 };
 
@@ -85,7 +85,7 @@ function setValid(field){
 
 //check on this funvtion later................
 function checkAlphabets(field){
-    if(/[a-zA-Z]+/.test(field.value)){
+    if(/[a-zA-Z]/.test(field.value)){
         setValid(field);
         return true;
     } else{
