@@ -7,77 +7,97 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./media/agency.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./media/agency.png" />
     <title>Sign Up</title>
-     <!-- Compiled and minified CSS -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
 
     <!-- Custom styles -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
-   <div class="container-fluid signBody">
-    <h3 class="mainTitle"><b>Sign Up</b></h3>
-    <div class="container signUpInner">
-   
-     <div class="row">
-       <form class="col s12" id="signUpForm" novalidate>
-         <div class="row">
+    <div class="container-fluid signBody">
+      <h3 class="mainTitle"><b>Sign Up</b></h3>
+      <div class="container signUpInner">
+        <div class="row">
+          <form class="col s12" id="signUpForm" novalidate>
+            <div class="row">
+              <div class="input-field col s6">
+                <label for="firstName">First Name</label>
+                <input
+                  name="First Name"
+                  id="firstName"
+                  type="text"
+                  onfocusout="validateFirstName()"
+                  pattern="[a-zA-Z]+"
+                />
+                <span class="info-text"></span>
+              </div>
 
-           <div class="input-field col s6">  
-            <label for="firstName">First Name</label>          
-             <input name="First Name" id="firstName" type="text" onfocusout="validateFirstName()">            
-             <span class="info-text"></span>
-           </div>
+              <div class="input-field col s6">
+                <label for="lastName">Last Name</label>
+                <input
+                  name="Last Name"
+                  id="lastName"
+                  type="text"
+                  onfocusout="validateLastName()"
+                />
+                <span class="info-text"></span>
+              </div>
+            </div>
 
-           <div class="input-field col s6">
-             <label for="lastName">Last Name</label>
-             <input name="Last Name"  id="lastName" type="text" onfocusout="validateLastName()">            
-             <span class="info-text"></span>
-           </div>
-         </div>
-   
-         <div class="row">
-           <div class="input-field col s6">
-             <input name="Password"  id="passKey" type="password" onfocusout="validatePassKey()">
-             <span class="info-text"></span>
-             <label for="passKey">Password</label>             
-           </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <input
+                  name="Password"
+                  id="passKey"
+                  type="password"
+                  onfocusout="validatePassKey()"
+                />
+                <span class="info-text"></span>
+                <label for="passKey">Password</label>
+              </div>
 
-           <div class="input-field col s6">
-            <label for="confirmPassKey">Confirm Password</label>
-             <input name="Confirm Password" id="confirmPassKey" type="password" onfocusout="validateConfirmPassKey()">
-             <span class="info-text"></span>
-           </div>
-         </div>
-         <div class="row">
-           <div class="input-field col s12">
-             <input name="Email"  id="email" type="email" onfocusout="validateEmail()">
-             <span class="info-text"></span>
-             <label for="email">Email</label>             
-           </div>
-         </div>
- 
-         <button class="btn waves-effect" type="submit" name="action">Submit
-         </button>
- 
-       </form>
-     </div>
-     <img style="width: 45%;" src="./media/johnson-wang-iI4sR_nkkbc-unsplash.jpg" alt="" >
+              <div class="input-field col s6">
+                <label for="confirmPassKey">Confirm Password</label>
+                <input
+                  name="Confirm Password"
+                  id="confirmPassKey"
+                  type="password"
+                  onfocusout="validateConfirmPassKey()"
+                />
+                <span class="info-text"></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input
+                  name="Email"
+                  id="email"
+                  type="email"
+                  onfocusout="validateEmail()"
+                />
+                <span class="info-text"></span>
+                <label for="email">Email</label>
+              </div>
+            </div>
+
+            <button class="btn waves-effect" type="submit" name="action">
+              Submit
+            </button>
+          </form>
+        </div>
+        <img
+          style="width: 45%"
+          src="./media/johnson-wang-iI4sR_nkkbc-unsplash.jpg"
+          alt=""
+        />
+      </div>
     </div>
-   </div>
-
-
-
-
-
-
 
     <!-- project ends here-->
     <script
@@ -90,7 +110,7 @@
     ></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-            
+
     <!-- Custom scripts -->
     <script type="text/javascript" src="./js/app.js"></script>
   </body>
